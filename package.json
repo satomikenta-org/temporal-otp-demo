@@ -1,0 +1,23 @@
+{
+  "name": "temporal-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc --build",
+    "start": "ts-node src/worker.ts",
+    "startOTP": "ts-node src/api/startOTP.ts",
+    "authOTP": "ts-node src/api/authOTP.ts",
+    "query": "ts-node src/api/queryOTPState.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "temporalio": "^0.18.0",
+    "ts-node": "^10.5.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.5.5"
+  }
+}
